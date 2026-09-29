@@ -14,6 +14,9 @@
   /* fonts  */
   --respo-fs-main: clamp(10px, 6.5vw, 35px);
   --respo-fs-sub: clamp(7px, 4vw, 16px);
+  --respo-fs-fot: clamp(7px, 3.125vw, 14px);
+
+  --respo-fs-fot-me: clamp(8px, 3.8vw, 16px);
 }
 * {
   box-sizing: border-box;
@@ -44,10 +47,9 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 550px;
+  max-width: calc(550 / 16 * 1rem);
 }
 .logo {
-  font-size: 25px;
   font-weight: 200;
   font-size: var(--respo-fs-main);
 }
@@ -69,8 +71,15 @@ main {
   gap: 2rem;
 }
 footer {
-  font-size: 12px;
+  font-size: var(--respo-fs-fot);
   padding: 1rem;
+  font-weight: 200;
+}
+.me {
+  text-decoration: none;
+  font-size: var(--respo-fs-fot-me);
+  font-weight: 600;
+  color: var(--blue);
 }
 
 .card-1,
@@ -81,11 +90,11 @@ footer {
   flex-direction: column;
   gap: 1.5rem;
   padding: 2.1rem;
-  box-shadow: 1px 10px 15px 1px rgba(0, 0, 0, 20%);
+  box-shadow: 0px 15px 15px 1px rgba(0, 0, 0, 10%);
   border-top: 5px solid;
-  border-radius: 8px;
+  border-radius: 7px;
   min-width: 100%;
-  max-width: 350px;
+  max-width: calc(350 / 16 * 1rem);
 }
 
 .card-1 {
@@ -149,10 +158,3 @@ footer {
     grid-row: 2/4;
   }
 }
-
-/**/
-/* 2- use gap or space between , between title, description and icon */
-/* 3- put the same class to tilte , h2 , icon to make thing clean and simple  */
-/* 4- group all card in one selector and give them the comman style and select them one by one to style the top border  */
-/* 5- use gap between text-c and sections-c  */
-/* 6- selec add font size and put them in variables  */
