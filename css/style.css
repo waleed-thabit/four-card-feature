@@ -29,7 +29,69 @@ body {
 }
 main {
   padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 2rem;
+}
+.sections-c {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 footer {
   font-size: 12px;
 }
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.1rem;
+  box-shadow: 1px 10px 15px 1px rgba(0, 0, 0, 20%);
+  border-top: 5px solid;
+  border-radius: 8px;
+}
+
+.card-1 {
+  border-top-color: var(--cyan);
+}
+
+.card-2 {
+  border-top-color: var(--red);
+}
+
+.card-3 {
+  border-top-color: var(--oange);
+}
+
+.card-4 {
+  border-top-color: var(--blue);
+}
+
+.card-desc {
+  margin-block-start: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card-title {
+  margin-block-start: 0;
+  margin-block-end: 0.5rem;
+}
+.icons {
+  width: 70px;
+  height: 70px;
+  align-self: end;
+}
+
+/**/
+/* note for tommorow :  */
+/* 1- make the title and the description in one container .  */
+/* 2- use gap or space between , between title, description and icon */
+/* 3- put the same class to tilte , h2 , icon to make thing clean and simple  */
+/* 4- group all card in one selector and give them the comman style and select them one by one to style the top border  */
+/* 5- use gap between text-c and sections-c  */
+/* 6- selec add font size and put them in variables  */
