@@ -26,6 +26,7 @@ body {
   place-items: center;
   min-height: 100dvh;
   min-height: 100vh;
+  color: var(--grey-500);
 }
 main {
   padding: 2rem;
@@ -34,6 +35,28 @@ main {
   grid-template-rows: auto 1fr;
   gap: 2rem;
 }
+
+.text-c {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 200;
+}
+.main-title {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin: 0;
+}
+.desc {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
 .sections-c {
   display: grid;
   grid-template-columns: 1fr;
@@ -41,6 +64,7 @@ main {
 }
 footer {
   font-size: 12px;
+  padding: 1rem;
 }
 
 .card-1,
@@ -76,6 +100,7 @@ footer {
   margin-block-start: 0;
   font-size: 14px;
   font-weight: 400;
+  color: var(--grey-400);
 }
 .card-title {
   margin-block-start: 0;
