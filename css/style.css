@@ -16,7 +16,7 @@
   --respo-fs-sub: clamp(7px, 4vw, 16px);
   --respo-fs-fot: clamp(7px, 3.125vw, 14px);
 
-  --respo-fs-fot-me: clamp(8px, 3.8vw, 16px);
+  --respo-fs-fot-me: clamp(7px, 3.45vw, 16px);
 }
 * {
   box-sizing: border-box;
@@ -78,7 +78,7 @@ footer {
 .me {
   text-decoration: none;
   font-size: var(--respo-fs-fot-me);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--blue);
 }
 
